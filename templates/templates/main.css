@@ -1,3 +1,4 @@
+
 body {
     margin: 0;
     padding: 0;
@@ -16,8 +17,8 @@ body {
 
 
  .message.sent {
-    background-color: #00000034; /* Grøn baggrund for brugerens beskeder */
-    color: rgb(0, 0, 0);
+    background-color: #4286f4; /* Grøn baggrund for brugerens beskeder */
+    color: rgb(255, 255, 255);
     align-self: flex-end; /* Beskeder fra brugeren justeres til højre */
     margin-right: 20px;
  }
@@ -44,13 +45,20 @@ body {
     align-self: flex-end;
  }
 
-  .container {
-    width: 70%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+ .wrapper {
+    display: flex;
+    justify-content: center; /* Centrerer dem horisontalt */
+    align-items: center; /* Centrerer dem vertikalt */
+    height: 100vh; /* Sørger for, at de fylder hele skærmen */
+    gap: 20px; /* Afstand mellem dem */
   }
+  
+  .container, .container2 {
+    width: 70%; /* De skal fylde 40% af skærmens bredde */
+    position: relative; /* Fjerner absolute positioning */
+    transform: none; /* Fjerner transform, da den ikke længere er nødvendig */
+  }
+  
   
   .chatbox {
     margin: 0 auto;

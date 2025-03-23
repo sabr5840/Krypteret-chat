@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8">
+  <title>Alice - Krypteret Chat</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="client.js"></script>
+  <script defer>
+    window.addEventListener('DOMContentLoaded', () => {
+      startChat("Alice");
+    });
+  </script>
+</head>
+<body>
+
+<div class="wrapper">
+  <div class="container">
+    <div class="chatbox">
+
+      <div class="bar">
+        <div style="display: flex; align-items: center;">
+          <div class="status"></div>
+          <div class="name">Alice</div>
+        </div>
+        <div class="icon-container">
+          <div class="icon"><i class="fas fa-plus"></i></div>
+          <div class="icon"><i class="fas fa-video"></i></div>
+          <div class="icon"><i class="fas fa-cog"></i></div>
+        </div>
+      </div>
+
+      <div id="chat" class="chat-history"></div>
+
+      <div class="chat-input">
+        <input type="text" id="message" placeholder="Skriv en besked...">
+        <button id="send">Send</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
+
+</body>
+</html>

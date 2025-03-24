@@ -50,6 +50,5 @@ Projektet laver end-to-end kryptering (E2EE) med ECDH nøgleudveksling og AES-GC
 
 🔐 Sikkerhedsovervejelser
 
-- End-to-End Encryption (E2EE): Kun Alice og Bob kan læse beskederne. Serveren kan ikke dekryptere noget.
-- Perfect Forward Secrecy (PFS): Ikke implementeret, men kan tilføjes med ephemeral keys og nøgle-rotation.
+- End-to-End Encryption (E2EE): Kun Alice og Bob kan læse beskederne.
 - Integritet: AES-GCM sikrer, at beskeder ikke kan manipuleres uden at blive opdaget.

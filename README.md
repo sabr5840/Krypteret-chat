@@ -8,7 +8,7 @@ Projektet laver end-to-end kryptering (E2EE) med ECDH nøgleudveksling og AES-GC
 ✅ Confidentiality (fortrolighed) → Med symmetrisk kryptering (AES-GCM)
 ✅ Integrity (integritet) → Autentificeret kryptering med AES-GCM
 ✅ Two-person chat → Chat mellem Alice og Bob
-✅ Near real-time → WebSockets muliggør næsten realtids-kommunikation
+✅ real-time → WebSockets muliggør realtids-kommunikation
 
 🧑‍💻 Teknologi og kryptografi
 

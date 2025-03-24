@@ -9,7 +9,6 @@ Projektet laver end-to-end kryptering (E2EE) med ECDH nøgleudveksling og AES-GC
 ✅ Integrity (integritet) → Autentificeret kryptering med AES-GCM
 ✅ Two-person chat → Chat mellem Alice og Bob
 ✅ Near real-time → WebSockets muliggør næsten realtids-kommunikation
-✅ Klar visuel statusindikator → Grøn/rød forbindelse
 
 🧑‍💻 Teknologi og kryptografi
 
@@ -22,25 +21,25 @@ Projektet laver end-to-end kryptering (E2EE) med ECDH nøgleudveksling og AES-GC
 - WebSockets (ws)
   Realtidskommunikation mellem to parter via WebSocket server.
 
-  ⚙️ Installation og opsætning
+⚙️ Installation og opsætning
 
 1. Klon projektet
    git clone https://github.com/sabr5840/Krypteret-chat
    cd krypteret-chat
-2. Installer afhængigheder
+2. Installér dependencies
    npm install
 3. Start WebSocket serveren
    node server.js eller npm start
    Serveren kører på ws://localhost:3000
-4. Åbn klienterne
+4. Åbn de to klienter
    Åbn alice.html i én browserfane
    Åbn bob.html i en anden browserfane
    (Du kan også åbne dem i to forskellige browsere eller maskiner, så længe de har adgang til serveren)
 
-🚀 Sådan virker det
+🚀 Sådan virker chatten
 
-1. Forbindelse etableres
-   Bob og Alice opretter forbindelse til serveren.
+1. Forbindelse til server
+   Klienterne Bob og Alice opretter forbindelse til serveren.
 2. Nøgleudveksling (ECDH)
    Begge parter genererer deres public/private nøglepar og udveksler de offentlige nøgler.
    Ud fra de offentlige nøgler beregnes en fælles symmetrisk krypteringsnøgle.
@@ -48,7 +47,6 @@ Projektet laver end-to-end kryptering (E2EE) med ECDH nøgleudveksling og AES-GC
    Når nøglen er etableret, kan Alice og Bob sende krypterede beskeder til hinanden via WebSocket-serveren.
 4. AES-GCM beskedkryptering
    Hver besked krypteres med AES-GCM, hvilket sikrer både fortrolighed og integritet.
-   Statusindikator
 
 🔐 Sikkerhedsovervejelser
 
